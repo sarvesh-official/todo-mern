@@ -6,7 +6,7 @@ const Todo = ({ todo }) => {
       <button
         className="bg-purple-800 w-full h-full p-4 rounded-md text-white hover:bg-purple-700"
         onClick={() => {
-          fetch("http://localhost:3000/completed", {
+          fetch("https://todo-mern-heuy.vercel.app/completed", {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",

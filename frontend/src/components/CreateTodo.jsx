@@ -27,7 +27,7 @@ const CreateTodo = (props) => {
 
         <button
           onClick={() => {
-            fetch("http://localhost:3000/todos", {
+            fetch("https://todo-mern-heuy.vercel.app/todos", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
