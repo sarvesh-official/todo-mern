@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 
-mongoose.connect(
-  "mongodb+srv://sarvee:WDQzJBCrRa4GJArB@cluster0.5atlv5m.mongodb.net/todos"
-);
+import dotenv from "dotenv";
+
+dotenv.config();
+
+mongoose.connect(process.env.MONGO_URI);
 
 const todoSchema = mongoose.Schema({
   title: String,
